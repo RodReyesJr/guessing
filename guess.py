@@ -11,8 +11,10 @@ def main():
         if int(guess) == number:
             print("That's right!")
             break
-        else:
-            print("That's not right. Sorry! Guess again.")
+        elif int(guess) > number:
+            print("That's not right. Too high! Sorry! Guess again.")
+        elif int(guess) < number:
+            print("That's not right. Too low! Sorry! Guess again.")
 
 if __name__ == '__main__':
     main()
