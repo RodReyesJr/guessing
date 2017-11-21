@@ -9,8 +9,7 @@ def main():
     numguess = 0 # guess counter
     while True:
         guesses = input("Guess a number between one and ten. Type 'q' to quit: ")
-        
-        
+        # Error prevention doesn't seems to work        
         try: 
             if guesses == 'q':
                 break         
